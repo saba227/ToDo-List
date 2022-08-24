@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Oswald:wght@300&family=Roboto:wght@100&family=Titillium+Web:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: #EBE8E0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 70%;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 10px 0px 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto 0px auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.bi-list {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.bi-arrow-clockwise{
+    font-size: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.bi-arrow-clockwise:active{
+    transform: rotate(90deg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    margin-top: 1px;
+}
+
+#demo {
+    overflow: hidden;
+    height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    border: 1px solid rgb(232, 222, 222);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.item input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 60vw;
+}
+
+.inputPosition {
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+    width: 70%;
+}
+
+#input {
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 0px 10px 0px 20px;
+    background-color: white;
+}
+
+.item p {
+    width: 150px;
+}
+
+.item i {
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.linethrow {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.check {
+    background-color: rgb(171, 171, 240);
+    display: flex;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+.itm-border{
+    border-color: rgb(171, 171, 240);
+}
+
+@media only screen and (max-width: 576px) {
+    .item input {
+        width: 55vw;
+    }
+}
